@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { guessParity } from '../src/index.js';
+import evenGame from '../src/games/evenGame.js';
 
-guessParity(3);
+evenGame();

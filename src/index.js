@@ -1,23 +1,18 @@
 import readlineSync from 'readline-sync';
 
-export const greetUser = () => {
-  const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
-  console.log(`Hello, ${userName}!`);
-};
+const rounds = 3;
 
-export const guessParity = (numberOfTries) => {
+const runGame = (description, generateData) => {
   const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
   const congratulation = `Congratulations, ${userName}!`;
 
-  console.log(`Hello, ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
+  console.log(`Hello, ${userName}!\n${description}`);
 
   let correctAnswers = 0;
 
-  while (correctAnswers < numberOfTries) {
-    const randomNumber = Math.floor(Math.random() * 100);
-    const isEven = (number) => number % 2 === 0;
-    const expectedAnswer = isEven(randomNumber) ? 'yes' : 'no';
-    const userAnswer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
+  while (correctAnswers < rounds) {
+    const [askedQuestion, expectedAnswer] = generateData();
+    const userAnswer = readlineSync.question(`Question: ${askedQuestion}\nYour answer: `);
 
     if (expectedAnswer === userAnswer) {
       console.log('Correct!');
@@ -29,3 +24,5 @@ export const guessParity = (numberOfTries) => {
   }
   console.log(congratulation);
 };
+
+export default runGame;
