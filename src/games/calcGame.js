@@ -2,10 +2,10 @@ import runGame from '../index.js';
 
 const calcGame = () => {
   const description = 'What is the result of the expression?';
+  const getRandom = (value) => Math.floor(Math.random() * value);
   const operators = ['*', '+', '-'];
 
   const generateData = () => {
-    const getRandom = (value) => Math.floor(Math.random() * value);
     const a = getRandom(50);
     const b = getRandom(50);
     const operator = operators[getRandom(operators.length)];
