@@ -1,8 +1,8 @@
 import runGame from '../index.js';
+import getRandom from '../random-number-generator.js';
 
 const calcGame = () => {
   const description = 'What is the result of the expression?';
-  const getRandom = (value) => Math.floor(Math.random() * value);
   const operators = ['*', '+', '-'];
 
   const generateData = () => {
