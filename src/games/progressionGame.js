@@ -1,14 +1,14 @@
 import runGame from '../index.js';
-import getRandom from '../random-number-generator.js';
+import getRandomInt from '../random-number-generator.js';
 
 const progressionGame = () => {
   const description = 'What number is missing in the progression?';
   const progressionLength = 10;
 
   const generateData = () => {
-    const progressionStep = getRandom(10) + 1;
-    const hiddenPosition = getRandom(10);
-    const initialTerm = getRandom(50);
+    const progressionStep = getRandomInt(10) + 1;
+    const hiddenPosition = getRandomInt(10);
+    const initialTerm = getRandomInt(50);
     const progression = [];
     progression[0] = initialTerm;
 
