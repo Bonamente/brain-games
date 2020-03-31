@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import calcGame from '../src/games/calcGame.js';
+import startCalcGame from '../src/games/calcGame.js';
 
-calcGame();
+startCalcGame();

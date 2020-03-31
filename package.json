@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "",
   "type": "module",
   "main": "src/index.js",
@@ -11,6 +11,11 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
+  "keywords": [
+    "brain games",
+    "hexlet",
+    "nodejs"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
