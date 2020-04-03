@@ -5,23 +5,16 @@ const description = 'What is the result of the expression?';
 const operators = ['*', '+', '-'];
 
 const calculateMathExpression = (num1, num2, operator) => {
-  let result;
-
   switch (operator) {
     case '*':
-      result = num1 * num2;
-      break;
+      return num1 * num2;
     case '+':
-      result = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      result = num1 - num2;
-      break;
+      return num1 - num2;
     default:
-      break;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-
-  return result;
 };
 
 const generateData = () => {

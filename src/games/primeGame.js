@@ -6,7 +6,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 const isPrime = (num) => {
   if (num < 2 || (num > 2 && num % 2 === 0)) return false;
 
-  const maxDivisor = Math.floor(Math.sqrt(num));
+  const maxDivisor = Math.floor(Math.sqrt(num)) + 1;
 
   for (let i = 3; i < maxDivisor; i += 2) {
     if (num % i === 0) return false;
