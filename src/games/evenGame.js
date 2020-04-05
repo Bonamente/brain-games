@@ -8,7 +8,7 @@ const generateData = () => {
   const question = getRandomInt(0, 100);
   const answer = isEven(question) ? 'yes' : 'no';
 
-  return [question, answer];
+  return [question.toString(), answer];
 };
 
 const startEvenGame = () => {
