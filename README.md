@@ -4,6 +4,10 @@
 # Brain Games
 Brain Games is a set of five console games, built on the principle of popular mobile brain training applications. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
 
+## Technologies
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
+![Asciinema](https://img.shields.io/badge/asciinema-D40000.svg?style=for-the-badge&logo=asciinema&logoColor=white)
+
 ## Games:
 - **Calculator.** Arithmetic expressions to be evaluated.
 - **Progression.** Finds missing numbers in a sequence of numbers.
